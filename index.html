@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PCH720</title>
+
+    <!-- jQuery load -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery load end -->
+    <!-- vue load -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- vue load end -->
+    <!-- bootstrap CSS load -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap CSS load end -->
+
+    <!-- Custom CSS load -->
+    <link rel="stylesheet" href="assets/index.css" />
+    <!-- Custom CSS load end -->
+    <!-- fullpage load -->
+    <link rel="stylesheet" href="assets/fullpage/fullpage.css" />
+    <script type="text/javascript" src="assets/fullpage/fullpage.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          autoScrolling: true,
+          scrollHorizontally: true,
+        });
+      });
+    </script>
+    <!-- fullpage load end -->
+    <!-- Font Awesome load -->
+    <script
+      src="https://kit.fontawesome.com/56dcc4fdd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome load end -->
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="mp" class="section">
+        <div id="name">꾸준함으로 승부하는<br />주니어개발자 박찬희입니다</div>
+      </div>
+      <div id="introduce" class="section">
+        <div id="my-self" class="row">
+          <div style="text-align: center;" class="col-sm-6">
+            <div id="my_image">
+              <img src="assets/img/face.jpg" />
+            </div>
+            <a class="i_a" href="https://github.com/pch720" target="_blank"
+              ><i class="icon fab fa-github"></i
+            ></a>
+            <a class="i_a" href="https://www.instagram.com/pch720/"
+              ><i class="icon fab fa-instagram"></i
+            ></a>
+          </div>
+          <div id="ms_contents" class="col-sm-6">
+            <p id="profile">#Profile</p>
+            <p class="impactp">박찬희 / Chanhee Park</p>
+            <p><strong>birth :</strong> 2000.07.20 / 경기도 구리시</p>
+            <p><strong>Contact :</strong> 010-9116-4131 / qkrcksgml56@naver.com</p>
+            <p>
+              <strong>Graduation :</strong> 2019.03 ~ : 한국폴리텍대학
+              서울강서캠퍼스 재학(졸업예정)
+            </p>
+            <hr />
+            <p class="impactp">Who am I?</p>
+            <p><strong style="color: red;">열정과 꾸준함</strong>빼면 시체!</p>
+            <p>끝없이 끊임없이 발전하는 개발자!</p>
+          </div>
+          <div id="tech">
+            <img src="assets/img/js.png" />
+            <img src="assets/img/reactjs.png" />
+            <img src="assets/img/flutter.png" />
+            <img src="assets/img/mariadb.png" />
+            <img src="assets/img/mongodb.png" />
+            <img src="assets/img/oracle.png" />
+            <img src="assets/img/ec2.png" />
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="section">
+        <span id="project_bottom">프로젝트 제목 클릭 시 코드로 이동</span>
+        <div class="slide">
+          <div class="portfolio">
+            <a target="_blank" href="https://github.com/pch720/2020-Dogether"
+              ><p class="project_name">
+                #협업_및_목표달성_커뮤니티_사이트 #Dogether
+              </p></a
+            >
+            <object
+              title="YouTube video player"
+              class="youtube-player"
+              type="text/html"
+              width="100%"
+              height="315"
+              data="//www.youtube.com/embed/mrNKC8Df4Ns"
+              allowFullScreen
+            ></object>
+            <div class="row project_contents">
+              <div class="col-sm-6">
+                <p class="ptitle">프로젝트 설명</p>
+                <span>
+                  Dogether은 협업이 필요한 사람들에게 소통할 수 있는 게시판 및 채팅기능을 지원하고,
+                  서로의 일정을 함께 수정할 수 있는 캘린더 기능을 제공하므로써
+                  일의 진행도나 꾸준함을 확인할 수 있는 커뮤니티 사이트입니다.
+                </span>
+              </div>
+              <div class="col-sm-6">
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Framework<br />
+                  - 클라우드 : AWS EC2<br />
+                  - 데이터베이스 : MYSQL, Redis<br />
+                  - 기타 : Ajax(jQuery), Rserve(단어 빈도 수 분석), amChart(WordCloud)
+                </p>
+              </div>
+              <div class="dl_file">
+                <a
+                  href="https://github.com/pch720/files/raw/master/%ED%99%94%EB%81%88%ED%95%9C%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Dogether_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
+                  target="_blank"
+                  ><span>화면설계서</span></a
+                >
+                <a
+                  href="https://github.com/pch720/files/raw/master/%ED%99%94%EB%81%88%ED%95%9C%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Dogether_%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
+                  target="_blank"
+                  ><span>개발산출물</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="portfolio">
+            <a
+              target="_blank"
+              href="https://github.com/pch720/2019-How-about-Camp-"
+              ><p class="project_name">
+                #전국_캠핑장_위치정보_및_근처_편의시설정보_제공 #캠핑어때?
+              </p></a
+            >
+            <object
+              title="YouTube video player"
+              class="youtube-player"
+              type="text/html"
+              width="100%"
+              height="315"
+              data="//www.youtube.com/embed/dMTl1KOwWGg"
+              allowFullScreen
+            ></object>
+            <div class="row project_contents">
+              <div class="col-sm-6">
+                <p class="ptitle">프로젝트 설명</p>
+                <span
+                  >캠핑어때는 전국의 지역별 캠핑장과 근처의 편의시설의 정보를 제공하고
+                  게시판을 통해서 캠핑의 기초 지식이나 팁을 공유할 수 있는 사이트입니다.</span
+                >
+              </div>
+              <div class="col-sm-6">
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Framework<br />
+                  - 데이터베이스 : Oracle<br />
+                  - 적용 공공데이터(OpenAPI) :  전국 야영(캠핑)장 표준데이터(공공데이터포털)<br />
+                  - 기타 : 카카오 맵 API, Summernote 에디터, jQuery(비동기 서버통신 - ajax)
+                </p>
+              </div>
+              <div class="dl_file">
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
+                  target="_blank"
+                  ><span>화면설계서</span></a
+                >
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
+                  target="_blank"
+                  ><span>개발산출물</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="portfolio">
+            <a target="_blank" href="https://github.com/DevPrkms/koin_app"
+              ><p class="project_name">#한이음_ICT #잔돈_저금_앱 #koin</p></a
+            >
+            <div class="no-image">개발중</div>
+            <div class="row project_contents">
+              <div class="col-sm-6">
+                <p class="ptitle">프로젝트 설명</p>
+                <p>
+                  OpenBanking API를 사용하여 판매자와 소비자의 계좌를 연동하고
+                  현금 거래 후 남은 잔돈을 계좌로 이체해주는 서비스입니다.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Boot & Flutter<br />- 데이터베이스 :
+                  MongoDB<br />- 기타 :<br />- OpenBanking API(현재 위치
+                  검색)<br />- BlockChain(예정)
+                </p>
+              </div>
+              <div class="dl_file">
+                <a id="no"
+                        href=""
+                        target="_blank"
+                ><span>화면설계서</span></a
+                >
+                <a id="no1"
+                        href=""
+                        target="_blank"
+                ><span>개발산출물</span></a
+                >
+                <script>
+                  document.getElementById('no').onclick = function () {
+                    alert("개발중입니다.")
+                    return false;
+                  }
+                  document.getElementById('no1').onclick = function () {
+                    alert("개발중입니다.")
+                    return false;
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- bootstrap JS load -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <!-- bootstrap JS load end -->
+</html>
