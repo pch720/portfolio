@@ -85,7 +85,7 @@ body {
   padding: 10px;
 }
 
-#profile {
+.profile {
   font-size: 2rem;
   color: darkgray;
 }
@@ -152,6 +152,16 @@ body {
   text-align: center;
   margin: 0 auto;
   color: white;
+}
+
+.section_top {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding-top: 1.5%;
+  font-size: xx-large;
 }
 
 .no-image {
