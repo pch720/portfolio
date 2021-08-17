@@ -1,0 +1,24 @@
+문제 1번 
+function solution(s) {
+    let a=[];
+    let answer = [];
+    for(let i=0;i<s.length;i++){
+        if(s[i]!=s[i+1]&&s[i]!=s[i-1])
+            a.push({"key":i,"value":s[i]})
+    }
+    let word = s[0]
+    if(a[0].key != 0)
+        answer.push("")
+    for(let j=1;j<a.length;j++){
+        if(a[j].key-1===a[j-1].key)
+            word+=a[j].value
+        else{
+            answer.push(word)
+            word=a[j].value
+        }
+    }
+    answer.push(word)
+    if(a[a.length-1].key != s.length-1)
+        answer.push("")
+    return answer;
+}
