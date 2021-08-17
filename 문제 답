@@ -26,3 +26,14 @@ function solution(s) {
         answer.push("")
     return answer;
 }
+
+문제3번
+function solution(n, goal) {
+    let answer = 0;
+    for(let i in goal){
+        for(let j=0;j<i;j++)
+            if(goal[i]<goal[j])
+                answer++
+    }
+    return answer;
+}
