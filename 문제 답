@@ -27,6 +27,27 @@ function solution(s) {
     return answer;
 }
 
+
+
+!!!!!문제2번(푸는중)!!!!!
+function solution(text) {
+    let index = [];
+    let answer = [];
+    let count =0;
+    index.push({"num":0,"pattern":"A"},{"num":1,"pattern":"B"})
+    while(text === ""){
+        for(let i in index){
+            if(text.includes(index[i].pattern))
+                answer[count]=index[i].num
+        }
+        index.push({"num":i+1,"pattern":})
+    }
+    console.log(index)
+    return answer;
+}
+
+
+
 문제3번
 function solution(n, goal) {
     let answer = 0;
