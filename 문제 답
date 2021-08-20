@@ -29,18 +29,24 @@ function solution(s) {
 
 
 
-!!!!!문제2번(푸는중)!!!!!
+문제2번
 function solution(text) {
     let index = [];
     let answer = [];
     let count =0;
+    
     index.push({"num":0,"pattern":"A"},{"num":1,"pattern":"B"})
-    while(text === ""){
+    while(text.length>0){
+        let len = 0;
         for(let i in index){
-            if(text.includes(index[i].pattern))
+            if(text.substr(0,index[i].pattern.length)===index[i].pattern){
                 answer[count]=index[i].num
+                len = index[i].pattern.length
+            }
         }
-        index.push({"num":i+1,"pattern":})
+        index.push({"num":count+2,"pattern":text.substr(0,len+1)})
+        text = text.substr(len)
+        count++
     }
     console.log(index)
     return answer;
