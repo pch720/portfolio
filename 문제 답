@@ -39,12 +39,14 @@ function solution(text) {
     while(text.length>0){
         let len = 0;
         for(let i in index){
-            if(text.substr(0,index[i].pattern.length)===index[i].pattern){
+            const pattern = index[i].pattern
+            if(text.substr(0,pattern.length)===pattern){
                 answer[count]=index[i].num
-                len = index[i].pattern.length
+                len = pattern.length
             }
         }
-        index.push({"num":count+2,"pattern":text.substr(0,len+1)})
+        index.push({"num":index.length,"pattern":text.substr(0,len+1)})
+        index=index.filter((arr, index, callback) => index === callback.findIndex(t => t.pattern === arr.pattern));
         text = text.substr(len)
         count++
     }
