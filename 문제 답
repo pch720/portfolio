@@ -66,3 +66,32 @@ function solution(n, goal) {
     }
     return answer;
 }
+문제4번
+function solution(world) {
+    const N=world[0].length;
+    const M=world.length;
+    let a=[1,1];
+    let b=[1,2];
+    let type = 0;
+    while(JSON.stringify(a) === JSON.stringify([N,M])||
+          JSON.stringify(b) === JSON.stringify([N,M])){
+        switch(type){
+            case 0:     // |인경우
+                
+            break;
+            case 1:     // /인경우
+                
+            break;
+            case 2:     // ㅡ인경우
+                
+            break;
+            case 3:     // \인경우
+                
+            break;
+            default:
+                break;
+        }
+    }
+    var answer = 0;
+    return answer;
+}
